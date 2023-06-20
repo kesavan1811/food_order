@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://use.fontawesome.com/7c59c318e7.js"></script>
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Food Order</title>
+  </head>
+  <body>
+    <!--Navbar-->
+
+    <nav class="navbar">
+      <div class="nav-menu">
+        <ul class="nav-links">
+          <li class="active"><a href="">Home</a></li>
+          <li><a href="">Order</a></li>
+          <li><a href="">Food</a></li>
+          <li><a href="">Restaurant</a></li>
+          <li><a href="">Testimonials</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+        <div class="header-icons">
+          <img src="/Images/phone.png" alt="" />
+          <img src="/Images/grocery-store.png" alt="" />
+        </div>
+      </div>
+
+      <img src="./Images/menu.png" class="menu-btn" />
+    </nav>
+    <header>
+      <div class="header-content">
+        <h1>LOREM IPSUM</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+          culpa odit earum. Facere quod fuga accusamus, doloremque corrupti
+          incidunt eos rem repellendus velit accusantium aliquam nihil esse
+          minima architecto repudiandae
+        </p>
+      </div>
+    </header>
+
+    <!--Cards-->
+
+    <section class="events">
+      <div class="heading-div">
+        <h2 class="heading">Order Now</h2>
+      </div>
+
+      <div class="container">
+        <div class="cards">
+          <div class="card-img">
+            <img src="/Images/img4.jpg" alt="" />
+          </div>
+          <div class="card-body">
+            <h2>BURGER</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+            </p>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-img">
+            <img src="/Images/img2.jpg" alt="" />
+          </div>
+          <div class="card-body">
+            <h2>PIZZA</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+            </p>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-img">
+            <img src="/Images/img3.jpg" alt="" />
+          </div>
+          <div class="card-body">
+            <h2>PASTA</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="order-div">
+        <button class="order-btn">Order</button>
+      </div>
+    </section>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-menu");
+
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>
